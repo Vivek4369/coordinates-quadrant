@@ -1,0 +1,23 @@
+//Write a C program to determine the quadrant of a point (entered by user) in two dimensional coordinate system
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    printf("enter the x and y coordinates\n");
+    scanf("%d %d",&a,&b);
+
+    if(a==0 && b==0)
+    printf("given coordinates are at origin");
+    else if(a>0 && b >0)
+    printf("given coordinates are in first quadrant");
+    else if(a<0 && b >0)
+    printf("given coordinates are in second quadrant");
+    else if(a<0 && b <0)
+    printf("given coordinates are in third quadrant");
+    else if(a>0 && b <0)
+    printf("given coordinates are in fourth quadrant");
+    else if(a==0)
+    printf("given coordinates are on y axis");
+    else if(b==0)
+    printf("given coordinates are on x axis");
+}
